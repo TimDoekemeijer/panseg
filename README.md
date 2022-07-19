@@ -1,9 +1,6 @@
 # Automatic Segmentation of Pancreatic Tumors
 This repository includes the code for my research project: Deep Learning for Automatic Segmentation of Pancreatic Tumors in Diffusion-Weighted MR Images. Below, you can find a summary of the project and an overview of the repository. 
 
-## Summary 
-The aim of this project was to research the use of CNNs, specifically U-Net, to automatically and accurately contour pancreatic tumors on IVIM MR images. The used dataset was retrieved from three separate studies, and consisted of 61 patients, with a total of 119 IVIM MRI volumes. Each volume consisted of 18 axial slices, from which a total of 767 slices were labeled. Leave one out cross-validation (LOOCV) was used to most efficiently split the dataset into training, validation, and testing portions. Multiple loss functions were explored, and hyperparameters of the model were optimized using an automatic software framework for ML, monitoring the mean Dice validation loss. Preprocessing was used to make the dimensions of volumes of equal size and enhance contrast, and data augmentation (rotating, shifting, and shearing) was used to make the model more generalizable.
-
 ## Overview
 ### Preliminaries 
 To be able to use this code, the added conda environment (pansegenvironment.yml) needs to be installed.
